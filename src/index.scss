@@ -1,9 +1,21 @@
-$red: #bd0202;
+// Import Google Font - Raleway 300 & 700
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+
+// ===================
+// Font and color variables
+// ===================
+
+// Fonts
+$sans-serif: 'Raleway', sans-serif;
+$font-light: 400;
+$font-bold: 600;
+
+$red: #9b0909;
 $orange: #ff8d00;
-$yellow: #ffee02;
+$yellow: #e1b12c;
 $green: #008121;
 $blue: #004cff;
-$violet: #760088;
+$violet: #640274;
 $darkgray: #212121;
 $gray: #333333;
 $lightgray: #494848;
@@ -12,8 +24,7 @@ $shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-		'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-family: $sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -31,11 +42,6 @@ button.MuiButton-root {
 	font-weight: 550;
 	font-size: 12px;
 	color: #fff;
-}
-
-button.MuiButton-root:hover,
-button.target {
-	border-bottom: 1px solid;
 }
 
 button.aboutme {
@@ -69,30 +75,64 @@ button.MuiButton-root.contact:hover,
 button.contact.target {
 	color: #9c27b0;
 }
+.page {
+	padding: 0;
+	background: $darkgray;
+	min-height: 100vh;
+}
+.navbar {
+	position: sticky;
+	top: 0px;
+	background: $gray;
+	padding: 8px;
+	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	z-index: 200;
+}
 
+#competence {
+	padding: 0px 50px 0px 50px;
+	display: grid;
+	height: 90vh;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 40px;
+}
 .card {
-	width: auto;
-	height: auto;
 	border-radius: 5px;
 	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
 	transition: box-shadow 0.5s, transform 0.5s;
 	will-change: transform;
-	border: 5px solid none;
-	margin: 20px;
 	background: #333333;
 	padding: 10px;
 	animation: fadeIn 0.5s;
+
+	&.frontend {
+		grid-row: span 2;
+		grid-column: span 3;
+	}
+	&.backend {
+		grid-row: span 2;
+		grid-column: span 2;
+	}
+	&.methode {
+		grid-row: span 2;
+		grid-column: span 1;
+	}
+	&.design {
+		grid-row: span 2;
+		grid-column: span 2;
+	}
 }
 .card-title {
 	width: 100%;
+	height: auto;
 	display: flex;
 	border-radius: 5px;
 	justify-content: center;
-	background: $lightgray;
+	background: $darkgray;
 	margin-bottom: 20px;
-	box-shadow: $shadow;
-	font-weight: 900;
-	font-size: 22px;
+	font-weight: 800;
+	font-size: 15px;
 }
 
 @keyframes fadeIn {
@@ -112,17 +152,19 @@ button.contact.target {
 	width: 800px;
 	height: auto;
 	color: $orange;
+	margin-bottom: 30px;
 }
 
 .card-ex-content {
 	padding: 10px;
 	margin: 10px;
+	& .title {
+		background: $orange;
+		padding: 3px;
+		font-size: 15px;
+	}
 }
-.card-ex-content .title {
-	background: $orange;
-	padding: 3px;
-	font-size: 15px;
-}
+
 .MuiChip-root {
 	color: $white;
 	margin: 0px 10px 10px 10px;
@@ -130,16 +172,128 @@ button.contact.target {
 	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-.page {
-	padding: 0;
-	background: #212121;
-	min-height: 100vh;
+#portfolio {
+	padding: 0px 50px 0px 50px;
+	display: grid;
+	height: 100vh;
+	width: 100%;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 50px;
+	color: $gray;
+	& .content {
+		height: 75%;
+		width: 100%;
+		border-radius: 5px;
+		background: $gray;
+	}
+	& .card {
+		background: $yellow;
+	}
+
+	& .port4 {
+		grid-row: span 1;
+		grid-column: span 2;
+		transform: rotate(-8deg);
+		&:hover {
+			transform: none;
+		}
+	}
+	& .port5 {
+		grid-row: span 1;
+		grid-column: span 2;
+		transform: rotate(5deg);
+		&:hover {
+			transform: none;
+		}
+	}
+	& .port6 {
+		grid-row: span 1;
+		grid-column: span 2;
+		transform: rotate(7deg);
+		&:hover {
+			transform: none;
+		}
+	}
+	& .port1 {
+		grid-row: span 1;
+		grid-column: span 2;
+	}
+	& .port2 {
+		grid-row: span 1;
+		grid-column: span 2;
+	}
+	& .port3 {
+		grid-row: span 1;
+		grid-column: span 2;
+	}
 }
-.navbar {
-	position: sticky;
-	top: 0px;
-	background: #333333;
-	padding: 8px;
-	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
-	z-index: 200;
+
+#formation {
+	height: 80vh;
+	color: $white;
+	display: grid;
+	width: 100%;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(7, 1fr);
+	grid-gap: 0px;
+
+	& .card .title {
+		background: $green;
+		width: auto;
+		border-radius: 2px;
+		padding: 5px;
+		font-size: 15px;
+		display: flex;
+		justify-content: space-around;
+	}
+	& .card p {
+		color: $green;
+	}
+
+	& .year {
+		grid-row: span 6;
+		grid-column: 4 / span 1;
+		color: $green;
+		font-weight: $font-bold;
+	}
+	& .f1 {
+		grid-row: 1 / span 1;
+		grid-column: 1 / span 3;
+	}
+	& .f2 {
+		grid-row: 2 / span 1;
+		grid-column: 5 / span 3;
+	}
+	& .f3 {
+		grid-row: 3 / span 1;
+		grid-column: 1 / span 3;
+	}
+	& .f4 {
+		grid-row: 4 / span 1;
+		grid-column: 5 / span 3;
+	}
+	& .f5 {
+		grid-row: 5 / span 1;
+		grid-column: 1 / span 3;
+	}
+	& .f6 {
+		grid-row: 6 / span 1;
+		grid-column: 5 / span 3;
+	}
+}
+
+#contact {
+	height: 40vh;
+	color: $white;
+	display: grid;
+	width: 80%;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	padding-top: 50px;
+	& .card {
+		background: $violet;
+		font-family: Arial, Helvetica, sans-serif;
+	}
 }

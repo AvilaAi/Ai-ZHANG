@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
 	main: {
-		padding: '50px',
+		padding: '80px',
 		position: 'relative',
 		display: 'flex',
 		alignItems: 'center',

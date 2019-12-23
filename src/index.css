@@ -1,13 +1,164 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+a {
+  text-decoration: none;
+}
+
+button.MuiButton-root {
+  text-transform: none;
+  font-weight: 550;
+  font-size: 12px;
+  color: #fff;
+}
+
+button.MuiButton-root:hover,
+button.target {
+  border-bottom: 1px solid;
+}
+
+button.aboutme {
+  color: #fff;
+}
+
+button.MuiButton-root.competences:hover,
+button.competences.target {
+  color: #bd0202;
+}
+
+button.MuiButton-root.experiences:hover,
+button.experiences.target {
+  color: #ff8d00;
+}
+
+button.MuiButton-root.portfolio:hover,
+button.portfolio.target {
+  color: #ffee02;
+}
+
+button.MuiButton-root.formations:hover,
+button.formations.target {
+  color: #008121;
+}
+
+button.MuiButton-root.divers:hover,
+button.divers.target {
+  color: #004cff;
+}
+
+button.MuiButton-root.contact:hover,
+button.contact.target {
+  color: #9c27b0;
+}
+
+.card {
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+  border: 5px solid none;
+  margin: 20px;
+  background: #333333;
+  padding: 10px;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+}
+
+.card-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #494848;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 900;
+  font-size: 22px;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card:hover {
+  -webkit-box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.card.ex {
+  width: 800px;
+  height: auto;
+  color: #ff8d00;
+}
+
+.card-ex-content {
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-ex-content .title {
+  background: #ff8d00;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.MuiChip-root {
+  color: #e4e2ee;
+  margin: 0px 10px 10px 10px;
+  background: #bd0202;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.page {
+  padding: 0;
+  background: #212121;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background: #333333;
+  padding: 8px;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  z-index: 200;
+}
+/*# sourceMappingURL=index.css.map */

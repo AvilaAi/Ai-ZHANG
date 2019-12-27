@@ -1,5 +1,5 @@
 // Import Google Font - Raleway 300 & 700
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,600');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800');
 
 // ===================
 // Font and color variables
@@ -20,13 +20,14 @@ $darkgray: #212121;
 $gray: #333333;
 $lightgray: #494848;
 $white: rgb(228, 226, 238);
-$shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+$shadow: 0px 1px 1px black;
 
 body {
 	margin: 0;
 	font-family: $sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-shadow: $shadow;
 }
 
 code {
@@ -39,9 +40,10 @@ a {
 
 button.MuiButton-root {
 	text-transform: none;
-	font-weight: 550;
+	font-weight: 600;
 	font-size: 12px;
 	color: #fff;
+	font-family: $sans-serif;
 }
 
 button.aboutme {
@@ -89,10 +91,10 @@ button.contact.target {
 	z-index: 200;
 }
 
+//competence
 #competence {
-	padding: 0px 50px 0px 50px;
 	display: grid;
-	height: 90vh;
+	height: 100vh;
 	grid-template-rows: repeat(4, 1fr);
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 40px;
@@ -132,7 +134,15 @@ button.contact.target {
 	background: $darkgray;
 	margin-bottom: 20px;
 	font-weight: 800;
-	font-size: 15px;
+	font-size: 17px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	& span {
+		color: $red;
+
+		margin: 0px 4px 0px 4px;
+	}
 }
 
 @keyframes fadeIn {
@@ -172,122 +182,283 @@ button.contact.target {
 	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
-#portfolio {
-	padding: 0px 50px 0px 50px;
-	display: grid;
+//cover
+.cover {
 	height: 100vh;
-	width: 100%;
-	grid-template-rows: repeat(2, 1fr);
-	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 50px;
-	color: $gray;
-	& .content {
-		height: 75%;
-		width: 100%;
+	background: $darkgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	& h1 {
+		margin-top: -20px;
+		color: $white;
+		font-size: 92px;
+	}
+	& h1::after {
+		content: "It's me!";
+		color: $white;
+		background: $darkgray;
+		left: 275px;
+		position: absolute;
+		overflow: hidden;
+		animation: newtext 4s;
+	}
+	& .line {
+		position: relative;
+		border-right: 18px solid $lightgray;
+		width: 600px;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	& .typing {
+		animation: typewriter 5.5s steps(15) 0.5s 1 normal both, blinkCursor 0.8s steps(12) infinite normal;
+	}
+	& .enter {
+		display: flex;
+		cursor: pointer;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $white;
 		border-radius: 5px;
-		background: $gray;
-	}
-	& .card {
-		background: $yellow;
-	}
+		width: 300px;
+		height: 25px;
+		color: $white;
+		position: relative;
+		text-shadow: 0 0 2px white;
+		box-shadow: 0px 0px 3px white;
+		opacity: 0;
+		animation: showbutton 1.5s ease-out 6.5s 1 normal forwards;
+		background: linear-gradient(to right, $red, $orange, $yellow, $green, $blue, $violet);
+		&:hover {
+			text-shadow: 0 0 5px white;
+			box-shadow: 0px 0px 5px 1px white;
+		}
 
-	& .port4 {
-		grid-row: span 1;
-		grid-column: span 2;
-		transform: rotate(-8deg);
-		&:hover {
-			transform: none;
+		& span {
+			color: $white;
+			z-index: 8;
+		}
+		& .color {
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 5px;
+			background: $darkgray;
+			text-align: center;
+			overflow: hidden;
+			transform-origin: top right;
+		}
+		& .change {
+			animation: 1.5s ease-in slidein forwards;
 		}
 	}
-	& .port5 {
-		grid-row: span 1;
-		grid-column: span 2;
-		transform: rotate(5deg);
-		&:hover {
-			transform: none;
-		}
+}
+@keyframes slidein {
+	from {
+		transform: scaleX(1);
 	}
-	& .port6 {
-		grid-row: span 1;
-		grid-column: span 2;
-		transform: rotate(7deg);
-		&:hover {
-			transform: none;
-		}
+	to {
+		transform: scaleX(0);
 	}
-	& .port1 {
-		grid-row: span 1;
-		grid-column: span 2;
+}
+@keyframes showbutton {
+	from {
+		opacity: 0;
 	}
-	& .port2 {
-		grid-row: span 1;
-		grid-column: span 2;
+	to {
+		opacity: 1;
 	}
-	& .port3 {
-		grid-row: span 1;
-		grid-column: span 2;
+}
+@keyframes typewriter {
+	0% {
+		width: 0;
+	}
+	32% {
+		width: 600px;
+	}
+	45% {
+		width: 600px;
+	}
+	60% {
+		width: 250px;
+	}
+	78% {
+		width: 250px;
+	}
+	100% {
+		width: 600px;
+	}
+}
+@keyframes newtext {
+	0% {
+		width: 0;
+	}
+	70% {
+		width: 0px;
+	}
+	100% {
+		width: 1px;
+	}
+}
+@keyframes blinkCursor {
+	from {
+		border-right-color: $lightgray;
+	}
+	to {
+		border-right-color: $gray;
 	}
 }
 
-#formation {
-	height: 80vh;
-	color: $white;
-	display: grid;
-	width: 100%;
-	grid-template-rows: repeat(6, 1fr);
-	grid-template-columns: repeat(7, 1fr);
-	grid-gap: 0px;
+// aboutme
+#aboutme {
+	height: 100vh;
+}
 
-	& .card .title {
-		background: $green;
-		width: auto;
-		border-radius: 2px;
-		padding: 5px;
-		font-size: 15px;
-		display: flex;
-		justify-content: space-around;
+// ------------------portfolio
+#portfolio {
+	display: grid;
+	height: 100vh;
+	width: 100vw;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 50px;
+	color: $yellow;
+	& .content {
+		height: 70%;
+		width: 100%;
+		border-radius: 5px;
+		background: $gray;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		& .filter {
+			background-color: #c9c5c541;
+			height: 100%;
+			opacity: 0;
+			border-radius: 5px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			& button {
+				font-size: 13px;
+				font-weight: 500;
+				color: $gray;
+				background: $yellow;
+				font-family: inherit;
+				box-shadow: 0px 1px 1px 1px $gray;
+			}
+		}
 	}
-	& .card p {
-		color: $green;
+	& .card {
+		background: $gray;
+		grid-row: span 1;
+		grid-column: span 2;
+
+		&:hover .filter {
+			opacity: 1;
+			transition: opacity 0.3s ease-out;
+		}
+	}
+	& .text {
+		font-size: 12px;
+		padding-left: 10px;
+	}
+	& .text.name {
+		padding: 10px 0px 10px 10px;
+		font-weight: 700;
+		font-size: 16px;
+	}
+	& .text.desc {
+		font-size: 13px;
+		color: #b3b4a8;
+	}
+	& .text.tech {
+		padding-top: 5px;
+		color: #b3b4a8;
+	}
+}
+
+// formtaion
+#formation {
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: repeat(9, 1fr);
+	grid-column-gap: 3px;
+
+	& .card {
+		padding: 12px;
+
+		& .title {
+			background-color: $green;
+			color: rgb(225, 243, 225);
+			font-weight: 600;
+			text-align: center;
+			border-radius: 2px;
+			padding: 5px;
+			font-size: 15px;
+			box-shadow: $shadow;
+		}
+		& p {
+			font-size: 13px;
+			margin: 20px 10px -10px 10px;
+			color: rgb(146, 168, 146);
+			font-weight: 400;
+		}
+		& .lieu {
+			text-align: end;
+			margin-top: 30px;
+			margin-bottom: 10px;
+			font-weight: 600;
+			color: #339a4d;
+		}
 	}
 
 	& .year {
 		grid-row: span 6;
-		grid-column: 4 / span 1;
+		grid-column: 5 / span 1;
 		color: $green;
 		font-weight: $font-bold;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
 	}
 	& .f1 {
 		grid-row: 1 / span 1;
-		grid-column: 1 / span 3;
+		grid-column: 1 / span 4;
 	}
 	& .f2 {
 		grid-row: 2 / span 1;
-		grid-column: 5 / span 3;
+		grid-column: 6 / span 4;
 	}
 	& .f3 {
 		grid-row: 3 / span 1;
-		grid-column: 1 / span 3;
+		grid-column: 1 / span 4;
 	}
 	& .f4 {
 		grid-row: 4 / span 1;
-		grid-column: 5 / span 3;
+		grid-column: 6 / span 4;
 	}
 	& .f5 {
 		grid-row: 5 / span 1;
-		grid-column: 1 / span 3;
+		grid-column: 1 / span 4;
 	}
 	& .f6 {
 		grid-row: 6 / span 1;
-		grid-column: 5 / span 3;
+		grid-column: 6 / span 4;
 	}
 }
 
+// contact
 #contact {
-	height: 40vh;
+	height: 100vh;
 	color: $white;
 	display: grid;
-	width: 80%;
+	width: 100vw;
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 50px;

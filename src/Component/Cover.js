@@ -1,23 +1,24 @@
-import React from 'react';
-import { Button, makeStyles } from '@material-ui/core';
+import React, { useState } from 'react';
 // Imports - Router
-import { Link } from 'react-router-dom';
-const useStyles = makeStyles(theme => ({
-	root: {
-		background: theme.palette.midnight,
-		height: '100vh',
-	},
-}));
+
 const Cover = props => {
-	const classes = useStyles(props);
+	const [clickEnter, setClickEnter] = useState(false);
+
+	const handleClick = () => {
+		setClickEnter(true);
+		setTimeout(() => {
+			props.history.push('/aboutme');
+		}, 1700);
+	};
 
 	return (
-		<div className={classes.root}>
-			<div></div>
+		<div className='cover'>
+			<h1 className='line typing'>Hello, World!</h1>
 
-			<Link to='./aboutme'>
-				<Button color='secondary'>LOPKO</Button>
-			</Link>
+			<div className='enter' onClick={() => handleClick()}>
+				<span> Discovery </span>
+				<div className={clickEnter ? 'color change' : 'color'}></div>
+			</div>
 		</div>
 	);
 };

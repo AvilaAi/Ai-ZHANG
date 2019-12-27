@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
 	main: {
-		padding: '80px',
+		padding: '80px 130px 80px 130px',
 		position: 'relative',
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'center',
 		color: '#fff',
+		minHeight: '100vh',
 	},
 }));
 

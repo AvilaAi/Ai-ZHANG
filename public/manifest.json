@@ -3,9 +3,9 @@
 	"name": "AI ZHANG",
 	"icons": [
 		{
-			"src": "a.svg",
+			"src": "A .ico",
 			"sizes": "64x64 32x32 24x24 16x16",
-			"type": "svg/x-icon"
+			"type": "ico/x-icon"
 		}
 	],
 	"start_url": ".",

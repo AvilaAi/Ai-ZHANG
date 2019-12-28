@@ -30,7 +30,7 @@ const backlogo = ['https://cdn.worldvectorlogo.com/logos/mongodb.svg'];
 const Competences = () => {
 	return (
 		<Container>
-			<div id='competence'>
+			<div className='competence'>
 				<div className='card frontend'>
 					<div className='card-title'>
 						{' '}

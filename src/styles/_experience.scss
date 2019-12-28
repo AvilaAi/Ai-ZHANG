@@ -1,0 +1,51 @@
+.experience {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.card.ex {
+	width: 780px;
+	height: auto;
+	color: $orange;
+}
+
+.twocard {
+	width: 60px;
+	display: flex;
+	flex-direction: column;
+	&:first-child {
+		margin-right: 20px;
+	}
+	&:nth-child(2) {
+		margin-left: 20px;
+	}
+	.card.orange {
+		background: $orange;
+		height: 40px;
+		margin-bottom: 20px;
+	}
+	.card.gray {
+		background: $gray;
+		flex-grow: 1;
+	}
+}
+
+.card-ex-content {
+	padding: 10px;
+	margin: 10px;
+	& .title {
+		border-radius: 3px;
+		background: #f8b460;
+		color: $darkgray;
+		padding: 5px 0px 5px 10px;
+		font-size: 15px;
+	}
+	& p {
+		color: #f8b460;
+		font-size: 14px;
+
+		&::before {
+			content: ' ✦ ';
+		}
+	}
+}

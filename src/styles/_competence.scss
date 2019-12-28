@@ -1,0 +1,60 @@
+//competence
+.competence {
+	display: grid;
+	height: 100vh;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 40px;
+
+	.card-title {
+		width: 100%;
+		height: auto;
+		display: flex;
+		border-radius: 5px;
+		justify-content: center;
+		background: $darkgray;
+		margin-bottom: 20px;
+		font-weight: 800;
+		font-size: 17px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		& span {
+			color: $red;
+			margin: 0px 4px 0px 4px;
+		}
+	}
+}
+.card {
+	border-radius: 5px;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.5s, transform 0.5s;
+	will-change: transform;
+	background: #333333;
+	padding: 10px;
+	animation: fadeIn 0.5s;
+}
+.frontend {
+	grid-row: span 2;
+	grid-column: span 3;
+}
+.backend {
+	grid-row: span 2;
+	grid-column: span 2;
+}
+.methode {
+	grid-row: span 2;
+	grid-column: span 1;
+}
+.design {
+	grid-row: span 2;
+	grid-column: span 2;
+}
+
+.MuiChip-root.chips {
+	font-family: inherit;
+	color: $white;
+	margin: 0px 5px 10px 10px;
+	background: $red;
+	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}

@@ -1,10 +1,24 @@
 import React from 'react';
 import Container from './Container';
 const contact = [
-	{ name: 'Email', info: 'ai.z08@hotmail.com' },
-	{ name: 'Linkedin', info: 'https://www.linkedin.com/in/ai-zhang-94b871188/' },
+	{
+		name: 'Email',
+		info: (
+			<a href='mailto:ai.z08@hotmail.com?' subject='subject text' rel='noopener noreferrer' target='_blank'>
+				ai.z08@hotmail.com
+			</a>
+		),
+	},
+	{
+		name: 'Linkedin',
+		info: (
+			<a href='https://www.linkedin.com/in/ai-zhang-94b871188/' rel='noopener noreferrer' target='_blank'>
+				https://www.linkedin.com/in/ai-zhang-94b871188/
+			</a>
+		),
+	},
 	{ name: 'Tel', info: '+33 (0)6 52 02 33 92' },
-	{ name: 'Adress', info: '75001 Paris, France' },
+	{ name: 'Adress', info: 'pl. du marché st-honoré, 75001 Paris, France' },
 ];
 const Contact = () => {
 	return (
@@ -13,18 +27,9 @@ const Contact = () => {
 				{contact.map((c, i) => {
 					return (
 						<div className='card contact'>
-							{c.name}
-							<div
-								style={{
-									width: '100%',
-									display: 'flex',
-									fontSize: 15,
-									marginTop: 10,
-									justifyContent: 'center',
-								}}
-							>
-								<p>{c.info}</p>
-							</div>
+							<div className='label'>{c.name}</div>
+
+							<p>{c.info}</p>
 						</div>
 					);
 				})}

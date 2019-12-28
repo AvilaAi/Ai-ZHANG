@@ -1,199 +1,5 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800");
-body {
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 0px 1px 1px black;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-a {
-  text-decoration: none;
-}
-
-button.MuiButton-root {
-  text-transform: none;
-  font-weight: 600;
-  font-size: 12px;
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-}
-
-button.aboutme {
-  color: #fff;
-}
-
-button.MuiButton-root.competences:hover,
-button.competences.target {
-  color: #9b0909;
-}
-
-button.MuiButton-root.experiences:hover,
-button.experiences.target {
-  color: #ff8d00;
-}
-
-button.MuiButton-root.portfolio:hover,
-button.portfolio.target {
-  color: #e1b12c;
-}
-
-button.MuiButton-root.formations:hover,
-button.formations.target {
-  color: #008121;
-}
-
-button.MuiButton-root.divers:hover,
-button.divers.target {
-  color: #004cff;
-}
-
-button.MuiButton-root.contact:hover,
-button.contact.target {
-  color: #9c27b0;
-}
-
-.page {
-  padding: 0;
-  background: #212121;
-  min-height: 100vh;
-}
-
-.navbar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  background: #333333;
-  padding: 8px;
-  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
-  z-index: 200;
-}
-
-#competence {
-  display: -ms-grid;
-  display: grid;
-  height: 100vh;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
-}
-
-.card {
-  border-radius: 5px;
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
-  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
-  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
-  transition: box-shadow 0.5s, transform 0.5s;
-  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
-  will-change: transform;
-  background: #333333;
-  padding: 10px;
-  -webkit-animation: fadeIn 0.5s;
-          animation: fadeIn 0.5s;
-}
-
-.card.frontend {
-  grid-row: span 2;
-  grid-column: span 3;
-}
-
-.card.backend {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
-.card.methode {
-  grid-row: span 2;
-  grid-column: span 1;
-}
-
-.card.design {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-
-.card-title {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #212121;
-  margin-bottom: 20px;
-  font-weight: 800;
-  font-size: 17px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.card-title span {
-  color: #9b0909;
-  margin: 0px 4px 0px 4px;
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.card:hover {
-  -webkit-box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.card.ex {
-  width: 800px;
-  height: auto;
-  color: #ff8d00;
-  margin-bottom: 30px;
-}
-
-.card-ex-content {
-  padding: 10px;
-  margin: 10px;
-}
-
-.card-ex-content .title {
-  background: #ff8d00;
-  padding: 3px;
-  font-size: 15px;
-}
-
-.MuiChip-root {
-  color: #e4e2ee;
-  margin: 0px 10px 10px 10px;
-  background: #9b0909;
-  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
 .cover {
   height: 100vh;
   background: #212121;
@@ -426,7 +232,168 @@ button.contact.target {
 }
 
 #aboutme {
+  height: auto;
+}
+
+#aboutme .card {
+  width: 70vw;
+  padding: 20px 40px 20px 40px;
+}
+
+.wiki {
+  font-size: 12px;
+}
+
+.MuiDivider-root {
+  color: white;
+}
+
+.experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px;
+}
+
+.card.ex {
+  width: 780px;
+  height: auto;
+  color: #ff8d00;
+}
+
+.twocard {
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.twocard:first-child {
+  margin-right: 20px;
+}
+
+.twocard:nth-child(2) {
+  margin-left: 20px;
+}
+
+.twocard .card.orange {
+  background: #ff8d00;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.twocard .card.gray {
+  background: #333333;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.card-ex-content {
+  padding: 10px;
+  margin: 10px;
+}
+
+.card-ex-content .title {
+  border-radius: 3px;
+  background: #f8b460;
+  color: #212121;
+  padding: 5px 0px 5px 10px;
+  font-size: 15px;
+}
+
+.card-ex-content p {
+  color: #f8b460;
+  font-size: 14px;
+}
+
+.card-ex-content p::before {
+  content: ' ✦ ';
+}
+
+.competence {
+  display: -ms-grid;
+  display: grid;
   height: 100vh;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.competence .card-title {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #212121;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.competence .card-title span {
+  color: #9b0909;
+  margin: 0px 4px 0px 4px;
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+  background: #333333;
+  padding: 10px;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+}
+
+.frontend {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+.backend {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.methode {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.design {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.MuiChip-root.chips {
+  font-family: inherit;
+  color: #e4e2ee;
+  margin: 0px 5px 10px 10px;
+  background: #9b0909;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 #portfolio {
@@ -521,7 +488,11 @@ button.contact.target {
 }
 
 #formation .card {
-  padding: 12px;
+  padding: 15px;
+  padding-bottom: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 #formation .card .title {
@@ -537,10 +508,9 @@ button.contact.target {
 }
 
 #formation .card p {
-  font-size: 13px;
+  font-size: 14px;
   margin: 20px 10px -10px 10px;
-  color: #92a892;
-  font-weight: 400;
+  color: #a0b9a0;
 }
 
 #formation .card .lieu {
@@ -548,7 +518,7 @@ button.contact.target {
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 600;
-  color: #339a4d;
+  color: #008121;
 }
 
 #formation .year {
@@ -627,21 +597,176 @@ button.contact.target {
 }
 
 #contact {
-  height: 100vh;
   color: #e4e2ee;
-  display: -ms-grid;
-  display: grid;
-  width: 100vw;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
-  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #contact .card {
-  background: #640274;
-  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  width: 700px;
+  padding: 0;
+}
+
+#contact .card p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+#contact .label {
+  background: #5c0377;
+  height: 50px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #d0aed3;
+}
+
+#contact a {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 0px 1px 1px black;
+  cursor: default;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+button.MuiButton-root {
+  text-transform: none;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 0px 1px 1px black;
+}
+
+button.aboutme {
+  color: #fff;
+}
+
+button.MuiButton-root.competences:hover,
+button.competences.target {
+  color: #9b0909;
+}
+
+button.MuiButton-root.experiences:hover,
+button.experiences.target {
+  color: #ff8d00;
+}
+
+button.MuiButton-root.portfolio:hover,
+button.portfolio.target {
+  color: #e1b12c;
+}
+
+button.MuiButton-root.formations:hover,
+button.formations.target {
+  color: #008121;
+}
+
+button.MuiButton-root.divers:hover,
+button.divers.target {
+  color: #004cff;
+}
+
+button.MuiButton-root.contact:hover,
+button.contact.target {
+  color: #9c27b0;
+}
+
+.page {
+  padding: 0 !important;
+  background: #212121;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  background: #333333;
+  padding: 8px;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  z-index: 200;
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  will-change: transform;
+  background: #333333;
+  padding: 10px;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.card.contact:hover {
+  -webkit-box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=index.css.map */

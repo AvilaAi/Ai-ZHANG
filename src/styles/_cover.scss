@@ -1,0 +1,131 @@
+//cover
+.cover {
+	height: 100vh;
+	background: $darkgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	& h1 {
+		margin-top: -20px;
+		color: $white;
+		font-size: 92px;
+	}
+	& h1::after {
+		content: "It's me!";
+		color: $white;
+		background: $darkgray;
+		left: 275px;
+		position: absolute;
+		overflow: hidden;
+		animation: newtext 4s;
+	}
+	& .line {
+		position: relative;
+		border-right: 18px solid $lightgray;
+		width: 600px;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	& .typing {
+		animation: typewriter 5.5s steps(15) 0.5s 1 normal both, blinkCursor 0.8s steps(12) infinite normal;
+	}
+	& .enter {
+		display: flex;
+		cursor: pointer;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid $white;
+		border-radius: 5px;
+		width: 300px;
+		height: 25px;
+		color: $white;
+		position: relative;
+		text-shadow: 0 0 2px white;
+		box-shadow: 0px 0px 3px white;
+		opacity: 0;
+		animation: showbutton 1.5s ease-out 6.5s 1 normal forwards;
+		background: linear-gradient(to right, $red, $orange, $yellow, $green, $blue, $violet);
+		&:hover {
+			text-shadow: 0 0 5px white;
+			box-shadow: 0px 0px 5px 1px white;
+		}
+
+		& span {
+			color: $white;
+			z-index: 8;
+		}
+		& .color {
+			cursor: pointer;
+			border: none;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 5px;
+			background: $darkgray;
+			text-align: center;
+			overflow: hidden;
+			transform-origin: top right;
+		}
+		& .change {
+			animation: 1.5s ease-in slidein forwards;
+		}
+	}
+}
+@keyframes slidein {
+	from {
+		transform: scaleX(1);
+	}
+	to {
+		transform: scaleX(0);
+	}
+}
+@keyframes showbutton {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes typewriter {
+	0% {
+		width: 0;
+	}
+	32% {
+		width: 600px;
+	}
+	45% {
+		width: 600px;
+	}
+	60% {
+		width: 250px;
+	}
+	78% {
+		width: 250px;
+	}
+	100% {
+		width: 600px;
+	}
+}
+@keyframes newtext {
+	0% {
+		width: 0;
+	}
+	70% {
+		width: 0px;
+	}
+	100% {
+		width: 1px;
+	}
+}
+@keyframes blinkCursor {
+	from {
+		border-right-color: $lightgray;
+	}
+	to {
+		border-right-color: $gray;
+	}
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Container from './Container';
 
 const Divers = props => {
@@ -10,6 +9,5 @@ const Divers = props => {
 	);
 };
 
-Divers.propTypes = {};
 
 export default Divers;

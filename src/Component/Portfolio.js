@@ -65,7 +65,7 @@ const Portfolio = props => {
 								}}
 							>
 								<div className='filter'>
-									<a href={p.link} style={{ display: 'table-cell' }} target='_blank'>
+									<a href={p.link} rel="noopener noreferrer" style={{ display: 'table-cell' }} target='_blank'>
 										<Button>View</Button>
 									</a>
 								</div>

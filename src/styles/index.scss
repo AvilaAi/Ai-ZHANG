@@ -1,0 +1,104 @@
+@import '_variables';
+@import '_cover';
+@import '_aboutme';
+@import '_experience';
+@import '_competence';
+@import '_portfolio';
+@import '_formation';
+@import '_contact';
+
+body {
+	margin: 0;
+	font-family: $sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow: $shadow;
+	cursor: default;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+a {
+	text-decoration: none;
+}
+
+button.MuiButton-root {
+	text-transform: none;
+	font-weight: 600;
+	font-size: 12px;
+	color: #fff;
+	font-family: $sans-serif;
+	text-shadow: $shadow;
+}
+
+button.aboutme {
+	color: #fff;
+}
+
+button.MuiButton-root.competences:hover,
+button.competences.target {
+	color: $red;
+}
+
+button.MuiButton-root.experiences:hover,
+button.experiences.target {
+	color: $orange;
+}
+
+button.MuiButton-root.portfolio:hover,
+button.portfolio.target {
+	color: $yellow;
+}
+
+button.MuiButton-root.formations:hover,
+button.formations.target {
+	color: $green;
+}
+button.MuiButton-root.divers:hover,
+button.divers.target {
+	color: $blue;
+}
+button.MuiButton-root.contact:hover,
+button.contact.target {
+	color: #9c27b0;
+}
+.page {
+	padding: 0 !important;
+	background: $darkgray;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+.navbar {
+	position: sticky;
+	top: 0px;
+	background: $gray;
+	padding: 8px;
+	box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+	z-index: 200;
+}
+
+.card {
+	border-radius: 5px;
+	box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+	transition: box-shadow 0.5s, transform 0.5s;
+	will-change: transform;
+	background: #333333;
+	padding: 10px;
+	animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.card.contact:hover {
+	box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+	transform: scale(1.1);
+}

@@ -240,12 +240,58 @@
   padding: 20px 40px 20px 40px;
 }
 
-.wiki {
-  font-size: 12px;
+#aboutme .title {
+  background: #212121;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.MuiDivider-root {
-  color: white;
+#aboutme .chip {
+  background: none;
+  border: 1px solid #494848;
+  color: #e4e2ee;
+  margin-right: 7px;
+  height: 28px;
+  font-size: 12px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+#aboutme .content {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #212121;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#aboutme .desc {
+  width: 75%;
+}
+
+#aboutme img {
+  border-radius: 5px;
 }
 
 .experience {
@@ -321,12 +367,58 @@
 .competence {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
+  grid-gap: 30px;
+}
+
+.competence .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.432);
+          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.432);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.competence .logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.competence .logo-design img {
+  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.432);
+          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.432);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.competence .logo-design img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.competence img {
+  border-radius: 20%;
 }
 
 .competence .card-title {
@@ -340,8 +432,8 @@
       -ms-flex-pack: center;
           justify-content: center;
   background: #212121;
-  margin-bottom: 20px;
-  font-weight: 800;
+  margin-bottom: 15px;
+  font-weight: 700;
   font-size: 17px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -368,32 +460,35 @@
 }
 
 .frontend {
-  grid-row: span 2;
+  grid-row: span 1;
   grid-column: span 3;
 }
 
 .backend {
-  grid-row: span 2;
+  grid-row: span 1;
   grid-column: span 2;
 }
 
 .methode {
-  grid-row: span 2;
+  grid-row: span 1;
   grid-column: span 1;
 }
 
 .design {
-  grid-row: span 2;
+  grid-row: span 1;
   grid-column: span 2;
 }
 
-.MuiChip-root.chips {
+.competence .chip {
+  font-weight: 400;
   font-family: inherit;
   color: #e4e2ee;
-  margin: 0px 5px 10px 10px;
+  margin: 10px 0px 20px 10px;
   background: #9b0909;
-  -webkit-box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 #portfolio {
@@ -450,6 +545,13 @@
   grid-column: span 2;
 }
 
+#portfolio .card:hover {
+  -webkit-box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 #portfolio .card:hover .filter {
   opacity: 1;
   -webkit-transition: opacity 0.3s ease-out;
@@ -493,6 +595,13 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+#formation .card:hover {
+  -webkit-box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #formation .card .title {
@@ -594,6 +703,49 @@
   -ms-grid-column: 6;
   -ms-grid-column-span: 4;
   grid-column: 6 / span 4;
+}
+
+.divers {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  grid-gap: 30px;
+}
+
+.divers .one {
+  height: 350px;
+  grid-row: span 4;
+  grid-column: span 2;
+  background-size: contain;
+  background-position: center;
+  background-image: url("https://res.cloudinary.com/dg0flooxn/image/upload/v1577708899/fsx3hibk8umtinxpt5ec.png");
+}
+
+.divers .two {
+  grid-row: span 2;
+  grid-column: span 5;
+}
+
+.divers .three {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+.divers .four {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / span 1;
+  grid-column: span 3;
+}
+
+.divers .five {
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5 / span 1;
 }
 
 #contact {
@@ -768,5 +920,17 @@ button.contact.target {
           box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.chip {
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.chip:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=index.css.map */

@@ -27,11 +27,14 @@ a {
 
 button.MuiButton-root {
 	text-transform: none;
-	font-weight: 600;
+	font-weight: 700;
 	font-size: 12px;
-	color: #fff;
+	color: $white;
 	font-family: $sans-serif;
 	text-shadow: $shadow;
+	&.target {
+		text-shadow: #111111 3px 0 10px;
+	}
 }
 
 button.aboutme {

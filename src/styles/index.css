@@ -69,16 +69,20 @@
   -webkit-box-shadow: 0px 0px 3px white;
           box-shadow: 0px 0px 3px white;
   opacity: 0;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
   -webkit-animation: showbutton 1.5s ease-out 6.5s 1 normal forwards;
           animation: showbutton 1.5s ease-out 6.5s 1 normal forwards;
-  background: -webkit-gradient(linear, left top, right top, from(#9b0909), color-stop(#ff8d00), color-stop(#e1b12c), color-stop(#008121), color-stop(#004cff), to(#640274));
-  background: linear-gradient(to right, #9b0909, #ff8d00, #e1b12c, #008121, #004cff, #640274);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(238, 52, 52, 0.795)), color-stop(rgba(240, 157, 80, 0.863)), color-stop(#e1b12c), color-stop(#008121), color-stop(#004cff), to(#640274));
+  background: linear-gradient(to right, rgba(238, 52, 52, 0.795), rgba(240, 157, 80, 0.863), #e1b12c, #008121, #004cff, #640274);
 }
 
 .cover .enter:hover {
-  text-shadow: 0 0 5px white;
-  -webkit-box-shadow: 0px 0px 5px 1px white;
-          box-shadow: 0px 0px 5px 1px white;
+  text-shadow: #fc0 1px 0 10px;
+  -webkit-box-shadow: 0px 0px 5px 5px #e4e2ee;
+          box-shadow: 0px 0px 5px 5px #e4e2ee;
 }
 
 .cover .enter span {
@@ -94,7 +98,7 @@
   top: 0;
   right: 0;
   bottom: 0;
-  border-radius: 5px;
+  border-radius: 2px;
   background: #212121;
   text-align: center;
   overflow: hidden;
@@ -235,35 +239,50 @@
   height: auto;
 }
 
-#aboutme .card {
-  width: 70vw;
-  padding: 20px 40px 20px 40px;
+#aboutme hr {
+  border: 1px solid #494848;
+}
+
+#aboutme p {
+  font-size: 15px;
+  font-weight: 300;
+  word-spacing: 1px;
+  text-align: justify;
+}
+
+#aboutme .maincard {
+  background: #212121;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px 20px 20px 20px;
 }
 
 #aboutme .title {
-  background: #212121;
-  height: 40px;
-  border-radius: 5px;
+  height: 30px;
   padding-left: 30px;
   padding-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#aboutme .title span {
+  font-size: 18px;
 }
 
 #aboutme .chip {
   background: none;
-  border: 1px solid #494848;
-  color: #e4e2ee;
-  margin-right: 7px;
+  color: white;
+  margin: 10px;
+  margin-bottom: 5px;
   height: 28px;
   font-size: 12px;
   -webkit-transition: 0.3s;
@@ -273,17 +292,14 @@
 }
 
 #aboutme .content {
-  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #212121;
   padding: 15px;
   border-radius: 5px;
-  margin-bottom: 20px;
 }
 
 #aboutme .desc {
@@ -292,6 +308,8 @@
 
 #aboutme img {
   border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .experience {
@@ -823,11 +841,15 @@ a {
 
 button.MuiButton-root {
   text-transform: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 12px;
-  color: #fff;
+  color: #e4e2ee;
   font-family: "Raleway", sans-serif;
   text-shadow: 0px 1px 1px black;
+}
+
+button.MuiButton-root.target {
+  text-shadow: #111111 3px 0 10px;
 }
 
 button.aboutme {

@@ -44,11 +44,20 @@
 		text-shadow: 0 0 2px white;
 		box-shadow: 0px 0px 3px white;
 		opacity: 0;
+		transition: box-shadow 0.5s;
 		animation: showbutton 1.5s ease-out 6.5s 1 normal forwards;
-		background: linear-gradient(to right, $red, $orange, $yellow, $green, $blue, $violet);
+		background: linear-gradient(
+			to right,
+			rgba(238, 52, 52, 0.795),
+			rgba(240, 157, 80, 0.863),
+			$yellow,
+			$green,
+			$blue,
+			$violet
+		);
 		&:hover {
-			text-shadow: 0 0 5px white;
-			box-shadow: 0px 0px 5px 1px white;
+			text-shadow: #fc0 1px 0 10px;
+			box-shadow: 0px 0px 5px 5px $white;
 		}
 
 		& span {
@@ -63,7 +72,7 @@
 			top: 0;
 			right: 0;
 			bottom: 0;
-			border-radius: 5px;
+			border-radius: 2px;
 			background: $darkgray;
 			text-align: center;
 			overflow: hidden;

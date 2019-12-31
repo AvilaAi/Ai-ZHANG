@@ -1,27 +1,40 @@
 // aboutme
 #aboutme {
 	height: auto;
-	.card {
-		width: 70vw;
-		padding: 20px 40px 20px 40px;
+	hr {
+		border: 1px solid $lightgray;
+	}
+	p {
+		font-size: 15px;
+		font-weight: 300;
+		word-spacing: 1px;
+		text-align: justify;
+	}
+
+	.maincard {
+		background: $darkgray;
+		border-radius: 8px;
+		margin: 10px;
+		padding: 10px 20px 20px 20px;
 	}
 	.title {
-		background: $darkgray;
-		height: 40px;
-		border-radius: 5px;
+		height: 30px;
 		padding-left: 30px;
 		padding-right: 30px;
 		display: flex;
-		align-items: center;
+		align-items: flex-end;
 		justify-content: space-between;
 		font-weight: 700;
-		margin-bottom: 20px;
+		margin-bottom: 10px;
+		& span {
+			font-size: 18px;
+		}
 	}
 	.chip {
 		background: none;
-		border: 1px solid $lightgray;
-		color: $white;
-		margin-right: 7px;
+		color: white;
+		margin: 10px;
+		margin-bottom: 5px;
 		height: 28px;
 		font-size: 12px;
 		transition: 0.3s;
@@ -30,13 +43,10 @@
 	}
 
 	.content {
-		margin-top: 20px;
 		display: flex;
 		justify-content: space-between;
-		background: $darkgray;
 		padding: 15px;
 		border-radius: 5px;
-		margin-bottom: 20px;
 	}
 	.desc {
 		width: 75%;
@@ -44,5 +54,7 @@
 
 	img {
 		border-radius: 5px;
+		margin-top: 10px;
+		margin-left: 10px;
 	}
 }

@@ -32,7 +32,6 @@
 	}
 	& .enter {
 		display: flex;
-		cursor: pointer;
 		justify-content: center;
 		align-items: center;
 		border: 1px solid $white;
@@ -65,7 +64,6 @@
 			z-index: 8;
 		}
 		& .color {
-			cursor: pointer;
 			border: none;
 			position: absolute;
 			left: 0;

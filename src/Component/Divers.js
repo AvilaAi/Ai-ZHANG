@@ -21,8 +21,8 @@ const Divers = props => {
 					</p>
 				</div>
 				<div className='card four'>
-					<img width='100%' height='40%' src={word} alt='words' />
-					<div className='title'>&nbsp; Traductrice independante</div>
+					<img width='100%' height='30%' src={word} alt='words' />
+					<div className='title'>&nbsp; Traductrice indépendante</div>
 					<p>
 						Traduction de documents écrits et interprete orale aux événements pour clientele individuel et
 						entreprises chinoises <br />

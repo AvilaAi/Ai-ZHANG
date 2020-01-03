@@ -321,9 +321,25 @@
 }
 
 .card.ex {
-  width: 780px;
+  width: 800px;
   height: auto;
   color: #ff8d00;
+}
+
+.card.ex img {
+  height: 40px;
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
+
+.card.ex img.logoes {
+  height: 30px;
+}
+
+.card.ex img.logoca {
+  height: 80px;
+  top: 30%;
 }
 
 .twocard {
@@ -364,15 +380,36 @@
 }
 
 .card-ex-content .title {
-  border-radius: 3px;
-  background: #f8b460;
-  color: #212121;
-  padding: 5px 0px 5px 10px;
-  font-size: 15px;
+  border-radius: 5px;
+  background: #212121;
+  color: #f8c383ea;
+  padding: 5px 10px 5px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: -5px;
+  margin-bottom: 0;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  word-spacing: 3px;
+}
+
+.card-ex-content span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .card-ex-content p {
-  color: #f8b460;
+  color: #f8c383bd;
   font-size: 14px;
 }
 

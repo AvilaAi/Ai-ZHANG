@@ -4,8 +4,8 @@ const contact = [
 	{
 		name: 'Email',
 		info: (
-			<a href='mailto:ai.z08@hotmail.com?' subject='subject text' rel='noopener noreferrer' target='_blank'>
-				ai.z08@hotmail.com
+			<a href='mailto:ai-zhang@hotmail.com?' subject='subject text' rel='noopener noreferrer' target='_blank'>
+				ai-zhang@hotmail.com
 			</a>
 		),
 	},

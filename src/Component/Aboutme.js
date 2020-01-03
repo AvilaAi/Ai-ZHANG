@@ -30,9 +30,10 @@ const Aboutme = props => {
 							<div className='desc'>
 								<p>
 									« Curieuse et passionnée à propos de tout ce qui touche au web, je me suis
-									réorientée depuis les métiers du marketing. Ayant un bon sens de la logique, j'ai
-									vite progressé pendant un an d'experience dans le monde de code. En plus une aisance
-									dans les relations humaines, j'apprécis notament le travail en équipe.
+									réorientée depuis les métiers du marketing et de la communication. Des expériences
+									dans Web design, la maîtrise des logiciels informatiques et un bon sens de la
+									logique ce sont mes atouts qui m'ont permet de vite progresser pendant un an de
+									l'aventure dans le monde de code.
 								</p>
 								<p>
 									En tant que développeur polyvalent, je maîtrise les technologies pour le fontend et

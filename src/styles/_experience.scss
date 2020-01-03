@@ -4,9 +4,22 @@
 	margin-bottom: 50px;
 }
 .card.ex {
-	width: 780px;
+	width: 800px;
 	height: auto;
 	color: $orange;
+	img {
+		height: 40px;
+		position: absolute;
+		right: 10%;
+		top: 20%;
+		&.logoes {
+			height: 30px;
+		}
+		&.logoca {
+			height: 80px;
+			top: 30%;
+		}
+	}
 }
 
 .twocard {
@@ -34,14 +47,29 @@
 	padding: 10px;
 	margin: 10px;
 	& .title {
-		border-radius: 3px;
-		background: #f8b460;
-		color: $darkgray;
-		padding: 5px 0px 5px 10px;
-		font-size: 15px;
+		border-radius: 5px;
+		background: $darkgray;
+		color: #f8c383ea;
+		padding: 5px 10px 5px 10px;
+		font-size: 16px;
+		font-weight: 700;
+		margin: -5px;
+		margin-bottom: 0;
+		height: 25px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		word-spacing: 3px;
+	}
+	span {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+		letter-spacing: 1px;
+		font-size: 14px;
+		font-weight: 500;
 	}
 	& p {
-		color: #f8b460;
+		color: #f8c383bd;
 		font-size: 14px;
 
 		&::before {

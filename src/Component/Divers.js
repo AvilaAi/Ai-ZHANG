@@ -9,8 +9,8 @@ const Divers = props => {
 				<div className='card two'>
 					<div className='title'> &nbsp;Co-fondatrice de l'Association LifeLab</div>
 					<p>
-						Organisation d'une exposition d'art contemporain intitulée "D'autre façon de vivre" en partenariat avec la
-						Mairie du 13e arrondissement de Paris
+						Organisation d'une exposition d'art contemporain intitulée "D'autre façon de vivre" en
+						partenariat avec la Mairie du 13e arrondissement de Paris
 					</p>
 				</div>
 				<div className='card three'>
@@ -35,9 +35,7 @@ const Divers = props => {
 				<div className='card seven'>
 					<div className='title'>&nbsp;Fan de musique</div>
 
-					<p>
-						Junior's piano teacher && Rock band keyboard player <br /> Guitar && Drums beginner
-					</p>
+					<p>Professeur de piano pour les enfants et Joueuse de piano dans un groupe de rock</p>
 				</div>
 				<div className='card eight'>
 					<p>Code everyday.</p>

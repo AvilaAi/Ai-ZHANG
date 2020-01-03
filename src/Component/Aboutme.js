@@ -29,22 +29,27 @@ const Aboutme = props => {
 						<div className='content'>
 							<div className='desc'>
 								<p>
-									« Curieuse et passionnée à propos de tout ce qui touche au web, je me suis
-									réorientée depuis les métiers du marketing et de la communication. Des expériences
-									dans Web design, la maîtrise des logiciels informatiques et un bon sens de la
-									logique ce sont mes atouts qui m'ont permet de vite progresser pendant un an de
-									l'aventure dans le monde de code.
+									« Sensible à la logique, aux chiffres, aux objets concrets, j'ai découvert il y a 3
+									ans que le monde du développement informatique correspondait parfaitement à ma
+									nature. C'est pour cela, qu'après des études en marketing et communication qui
+									correspondaient pas à mes atouts, j'ai décidé de m'orienter vers ce domaine
+									passionant.
+									<br />
+									<br />
+									Mes expériences dans le Web design, ma maîtrise des logiciels informatiques et un
+									bon sens de la logique sont mes atouts. Ma passion pour le developpement
+									informatique m'a permis de progresser rapidement dans ce domaine.
 								</p>
 								<p>
-									En tant que développeur polyvalent, je maîtrise les technologies pour le fontend et
-									le backend, j'ai pu réalisé plusieur projets web personnels qui m'a permis
-									d'approfondir mes connaissances surtout dans la language JavaScript, j'aime aussi
-									découvrir de nouvelles techenologies.
+									En tant que développeur polyvalente, je maîtrise plusieurs technologies pour le
+									front-end et le back-end (html,css et javascript) j'ai pu réaliser plusieurs projets
+									web personnels qui m'ont permis d'approfondir mes connaissances sur ces langages. Je
+									suis également curieuse sur la veille technologique.
 								</p>
 
 								<p>
 									Je suis actuellement à la recherche d'un emploi à plein temps en tant que
-									développeur web et j'aurai plaisir d'intégrer une nouvelle équipe. »
+									développeur web et intégrer une nouvelle équipe dynamique et motivée. »
 								</p>
 							</div>
 							<img

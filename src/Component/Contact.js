@@ -18,7 +18,7 @@ const contact = [
 		),
 	},
 	{ name: 'Tel', info: '+33 (0)6 52 02 33 92' },
-	{ name: 'Adress', info: 'pl. du marché st-honoré, 75001 Paris, France' },
+	{ name: 'Adresse', info: '17 pl. du marché st-honoré, 75001 Paris, France' },
 ];
 const Contact = () => {
 	return (

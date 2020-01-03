@@ -33,6 +33,7 @@ const Contact = () => {
 						</div>
 					);
 				})}
+				<div className='foot'>&copy; | 2019 | Ai ZHANG </div>
 			</div>
 		</Container>
 	);

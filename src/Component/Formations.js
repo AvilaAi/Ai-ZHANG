@@ -11,34 +11,34 @@ const formations = [
 	{
 		name: 'Art, Design, Web Graphique et Multimédia',
 		lieu: 'Institut Golden Collar, UFEC, Paris',
-		desc: ' Formation Bac + 𝟱',
+		desc: ' Formation Bac + 5',
 		cours: ' Arts visuels et design, Histoire de l’art, Perspective, Photoshop, Illustrator et Indesign ... ',
 	},
 	{
 		name: 'Marketing, Communication et Stratégies Commerciales',
 		lieu: 'INSEEC, Paris',
-		desc: ' Diplôme Bac + 𝟱',
+		desc: ' Diplôme Bac + 5',
 		cours:
 			'Publicité et Sémtologie de la Marque, E-commerce et marketing digital , Stratégies design et packaging …',
 	},
 	{
 		name: 'Management de Projets Internationaux Multilingues ',
 		lieu: 'Universite Bretagne Occidental, Brest',
-		desc: ' Diplôme Bac + 𝟰',
+		desc: ' Diplôme Bac + 4',
 		cours:
 			'Conduite de projet, Négociation, Traduction professionnelle, Informatique appliquée, Japonais débutant ...',
 	},
 	{
 		name: 'Langues Etrangères Appliquées ',
 		lieu: 'Universite de Bretagne Occidentale, Brest',
-		desc: ' Diplôme Bac + 𝟯',
+		desc: ' Diplôme Bac + 3',
 		cours:
 			"Civilisation des pays anglophones, Traduction anglaise, Economie internationale, Techniques d'expression, ...",
 	},
 	{
 		name: 'Français Langue Etrangère ',
 		lieu: 'Universite Oceanique de Chine, Qingdao',
-		desc: ' Diplôme Bac + 𝟯',
+		desc: ' Diplôme Bac + 3',
 		cours:
 			'Civilisation française et institutions, Traduction française, Culture française générale, Littérature francophone	...',
 	},
@@ -55,7 +55,7 @@ const Formations = props => {
 					return (
 						<div className={`card f${i + 1}`}>
 							<div className='title'>{f.name}</div>
-							<p>✦ {f.desc}</p>
+							<p className='desc'>✦ {f.desc}</p>
 							<p>✎ Matières: {f.cours}</p>
 							<p className='lieu'>⚑ &nbsp;{f.lieu}</p>
 						</div>

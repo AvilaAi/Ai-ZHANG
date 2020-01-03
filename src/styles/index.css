@@ -966,6 +966,17 @@
   color: inherit;
 }
 
+.foot {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 120px;
+  color: #494848;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  word-spacing: 5px;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;

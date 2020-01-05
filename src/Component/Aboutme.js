@@ -42,9 +42,9 @@ const Aboutme = props => {
 								</p>
 								<p>
 									En tant que développeur polyvalente, je maîtrise plusieurs technologies pour le
-									front-end et le back-end (html,css et javascript) j'ai pu réaliser plusieurs projets
-									web personnels qui m'ont permis d'approfondir mes connaissances sur ces langages. Je
-									suis également curieuse sur la veille technologique.
+									front-end et le back-end (HTML, CSS, JavaScript, React, Node.js...) j'ai pu réaliser
+									plusieurs projets web personnels qui m'ont permis d'approfondir mes connaissances
+									sur ces langages. Je suis également curieuse sur la veille technologique.
 								</p>
 
 								<p>
@@ -53,9 +53,8 @@ const Aboutme = props => {
 								</p>
 							</div>
 							<img
-								width='200px'
-								height='200px'
-								src='https://res.cloudinary.com/dg0flooxn/image/upload/e_auto_color,r_0/v1577528472/lobpaaxetpmb7rn8z3ta.jpg'
+								width='180px'
+								src='https://res.cloudinary.com/dg0flooxn/image/upload/v1578226149/jvhfuvcklnxcgjenz0zw.jpg'
 								alt='ai-zhang'
 							/>
 						</div>

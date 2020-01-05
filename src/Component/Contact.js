@@ -10,10 +10,10 @@ const contact = [
 		),
 	},
 	{
-		name: 'Linkedin',
+		name: 'LinkedIn',
 		info: (
-			<a href='https://www.linkedin.com/in/ai-zhang-94b871188/' rel='noopener noreferrer' target='_blank'>
-				https://www.linkedin.com/in/ai-zhang-94b871188/
+			<a href='https://www.linkedin.com/in/ai-zhang-1008/' rel='noopener noreferrer' target='_blank'>
+				https://www.linkedin.com/in/ai-zhang-1008/
 			</a>
 		),
 	},

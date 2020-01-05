@@ -28,7 +28,7 @@ const Container = props => {
 	return (
 		<MyContainer className='page' maxWidth='xl'>
 			<Grid container direction='row' justify='space-between' alignItems='center' className='navbar'>
-				<Grid container xs={11} direction='row' justify='space-around' alignItems='center'>
+				<Grid container xs={12} direction='row' justify='space-around' alignItems='center'>
 					{tabs.map(tab => {
 						const name = tab.label.toLowerCase().replace(/\s+/g, '');
 						const target = window.location
@@ -42,7 +42,6 @@ const Container = props => {
 						);
 					})}
 				</Grid>
-				{/* <Button>🇫🇷Langue 🇫🇷</Button> */}
 			</Grid>
 			<Grid container className={classes.main}>
 				{' '}

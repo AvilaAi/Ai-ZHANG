@@ -23,21 +23,21 @@ const formations = [
 	},
 	{
 		name: 'Management de Projets Internationaux Multilingues ',
-		lieu: 'Universite Bretagne Occidental, Brest',
+		lieu: 'Université de Bretagne Occidentale, Brest',
 		desc: ' Diplôme Bac + 4',
 		cours:
 			'Conduite de projet, Négociation, Traduction professionnelle, Informatique appliquée, Japonais débutant ...',
 	},
 	{
 		name: 'Langues Etrangères Appliquées ',
-		lieu: 'Universite de Bretagne Occidentale, Brest',
+		lieu: 'Université de Bretagne Occidentale, Brest',
 		desc: ' Diplôme Bac + 3',
 		cours:
 			"Civilisation des pays anglophones, Traduction anglaise, Economie internationale, Techniques d'expression, ...",
 	},
 	{
 		name: 'Français Langue Etrangère ',
-		lieu: 'Universite Oceanique de Chine, Qingdao',
+		lieu: 'Université Oceanique de Chine, Qingdao',
 		desc: ' Diplôme Bac + 3',
 		cours:
 			'Civilisation française et institutions, Traduction française, Culture française générale, Littérature francophone	...',

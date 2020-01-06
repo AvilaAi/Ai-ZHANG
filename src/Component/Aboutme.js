@@ -42,7 +42,7 @@ const Aboutme = props => {
 								</p>
 								<p>
 									En tant que développeur polyvalente, je maîtrise plusieurs technologies pour le
-									front-end et le back-end (HTML, CSS, JavaScript, React, Node.js...) j'ai pu réaliser
+									front-end et le back-end (HTML, CSS, JavaScript, React, NodeJs...) j'ai pu réaliser
 									plusieurs projets web personnels qui m'ont permis d'approfondir mes connaissances
 									sur ces langages. Je suis également curieuse sur la veille technologique.
 								</p>

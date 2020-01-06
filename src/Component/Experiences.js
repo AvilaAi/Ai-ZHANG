@@ -15,7 +15,7 @@ const Experiences = props => {
 				<div className='card ex'>
 					<div className='card-ex-content'>
 						<div className='title'>
-							Developpeur fullstack - Equally Work <span>08/2019 - 12/2019</span>
+							Développeur fullstack - Equally Work <span>08/2019 - 12/2019</span>
 						</div>
 						<h5>Réalisation de A à Z du back-office de la plateforme EquallyWork</h5>
 						<p>Recueil des besoins fonctionnels remontés par l’équipe</p>

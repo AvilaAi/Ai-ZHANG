@@ -9,11 +9,10 @@
 	color: $yellow;
 	& .content {
 		height: 70%;
-		width: 100%;
 		border-radius: 5px;
-		background: $gray;
 		background-size: 100% 100%;
 		background-repeat: no-repeat;
+		margin: 5px;
 		& .filter {
 			background-color: #c9c5c541;
 			height: 100%;
@@ -36,6 +35,8 @@
 		background: $gray;
 		grid-row: span 1;
 		grid-column: span 2;
+		overflow: scroll;
+		padding-bottom: 15px;
 		&:hover {
 			box-shadow: 5px 30px 60px 10px rgba(0, 0, 0, 0.3);
 			transform: scale(1.1);

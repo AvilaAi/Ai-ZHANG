@@ -17,6 +17,14 @@ const contact = [
 			</a>
 		),
 	},
+	{
+		name: 'GitHub',
+		info: (
+			<a href='https://github.com/AvilaAi' rel='noopener noreferrer' target='_blank'>
+				https://github.com/AvilaAi
+			</a>
+		),
+	},
 	{ name: 'Tel', info: '+33 (0)6 52 02 33 92' },
 	{ name: 'Adresse', info: '17 pl. du marché st-honoré, 75001 Paris, France' },
 ];

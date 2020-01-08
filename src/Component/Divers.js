@@ -35,7 +35,7 @@ const Divers = props => {
 				<div className='card seven'>
 					<div className='title'>&nbsp;Fan de musique</div>
 
-					<p>Professeur de piano pour les enfants et Joueuse de piano dans un groupe de rock</p>
+					<p>Professeur de piano pour les enfants et joueuse de piano dans un groupe de rock</p>
 				</div>
 				<div className='card eight'>
 					<p>Code everyday.</p>

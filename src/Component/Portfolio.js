@@ -7,7 +7,7 @@ const projets = [
 		img: 'https://res.cloudinary.com/dg0flooxn/image/upload/v1577196694/portfolio/czapmuavs7prho8xxpnk.png',
 		desc: 'Online piano game with demo songs',
 		tech: 'React ・ Framwork Material-UI',
-		link: 'https://mini-piano-game.herokuapp.com/',
+		link: 'https://mystifying-keller-7a3139.netlify.app/',
 	},
 	{
 		name: 'My-Moviz',

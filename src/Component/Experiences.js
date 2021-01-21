@@ -12,32 +12,34 @@ const Experiences = props => {
           {" "}
           <div className='card-ex-content'>
             <div className='title'>
-              Teacher Assistante - Bootcamp Coding La Capsule
-              <span>06/2019 - 08/2019</span>
+              Développeur web - Balthus Lab
+              <span>03/2020 - 10/2020</span>
             </div>
             <h5>
-              Assistante d’enseignement d’un batch d'une vingtaine d'étudiants{" "}
+              Développement d’une plateforme d’analyse des comportements des
+              publics du cinéma
             </h5>
-            <p>Participation aux revues de codes des étudiants</p>
             <p>
-              Prise en charge des demandes d'aide ainsi que des corrections des
-              bugs
+              Travaille avec les fondateurs et le product manager à la
+              spécification de la plateforme
             </p>
-            <p>Veille régulière sur les dernières technologies</p>
-            <p>Aide aux étudiants à réussir les challenges quotidiennes </p>
             <p>
-              Stack Front: HTML, CSS, JavaScript, React, React Native, Bootstrap
+              Développement front d’un une console d’analytics avec des
+              visualisations de graphes, listes hiérarchiques, et des cartes
+              géographiques interactives
             </p>
-            <p>Stack Back: Node JS, Express, MongoDB</p>
+            <p>
+              Développement d’un template pour un générateur de microsites basé
+              sur Gatsby
+            </p>
           </div>
-          <img className='logoca' src={logoca} alt='capsule' />
         </div>
         <div className='twocard'>
           <div className='card orange'></div>
           <div className='card gray'></div>
         </div>
       </div>
-						
+
       <div className='experience'>
         <div className='twocard'>
           <div className='card orange'></div>
